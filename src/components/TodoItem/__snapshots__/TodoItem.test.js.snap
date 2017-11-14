@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders completed items correctly 1`] = `
+<div
+  className="TodoItem completed"
+>
+  Test todo item text
+</div>
+`;
+
+exports[`renders uncompleted items correctly 1`] = `
+<div
+  className="TodoItem"
+>
+  Test todo item text
+</div>
+`;

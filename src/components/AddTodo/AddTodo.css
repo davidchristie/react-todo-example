@@ -1,0 +1,9 @@
+.AddTodo {
+  padding: 5px;
+}
+
+.AddTodo input {
+  font-size: larger;
+  padding: 10px;
+  width: 80%;
+}

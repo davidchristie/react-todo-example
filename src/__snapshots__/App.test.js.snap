@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <Header />
+  <TodoList
+    items={
+      Array [
+        Object {
+          "completed": false,
+          "text": "Install Node.js version >= 6",
+        },
+        Object {
+          "completed": false,
+          "text": "Install npm",
+        },
+        Object {
+          "completed": false,
+          "text": "Install Yarn",
+        },
+        Object {
+          "completed": false,
+          "text": "Use npm to globally install create-react-app",
+        },
+      ]
+    }
+    toggleCompleted={[Function]}
+  />
+  <AddTodo
+    onSubmit={[Function]}
+  />
+</div>
+`;
