@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does display if an item has been completed 1`] = `
+<Button
+  className="DeleteCompleted"
+>
+  Remove Completed
+</Button>
+`;
+
+exports[`does not display if no items are completed 1`] = `""`;

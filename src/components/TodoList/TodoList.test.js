@@ -2,7 +2,7 @@ import { shallow } from 'enzyme'
 import React from 'react'
 
 import TodoItem from '../TodoItem'
-import TodoList from './TodoList'
+import { TodoList } from './TodoList'
 
 it('renders correctly', () => {
   const props = {

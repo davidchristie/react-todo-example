@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import withItems from '../../enhancers/withItems'
 import './AddTodo.css'
 
-class AddTodo extends React.Component {
+export class AddTodo extends React.Component {
   constructor (props) {
     super(props)
     this._onChange = this._onChange.bind(this)
@@ -26,13 +27,11 @@ class AddTodo extends React.Component {
   _onSubmit (event) {
     event.preventDefault()
     if (this._isValidTodo()) {
-      if (this.props.onSubmit) {
-        const newItem = {
-          completed: false,
-          text: this.state.text
-        }
-        this.props.onSubmit(newItem)
+      const newItem = {
+        completed: false,
+        text: this.state.text
       }
+      this.props.addTodo(newItem)
       this.setState({
         text: ''
       })
@@ -56,7 +55,7 @@ class AddTodo extends React.Component {
 }
 
 AddTodo.propTypes = {
-  onSubmit: PropTypes.func
+  addTodo: PropTypes.func.isRequired
 }
 
-export default AddTodo
+export default withItems(AddTodo)

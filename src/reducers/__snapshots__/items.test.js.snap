@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adds a new todo item to state 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "text": "Test item 1",
+  },
+  Object {
+    "completed": false,
+    "text": "Test item 2",
+  },
+  Object {
+    "completed": false,
+    "text": "Test item 3",
+  },
+]
+`;
+
+exports[`removes completed todo item from state 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "text": "Test item 2",
+  },
+]
+`;
+
+exports[`toggles todo item completion state 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "text": "Test item 1",
+  },
+  Object {
+    "completed": true,
+    "text": "Test item 2",
+  },
+  Object {
+    "completed": false,
+    "text": "Test item 3",
+  },
+]
+`;

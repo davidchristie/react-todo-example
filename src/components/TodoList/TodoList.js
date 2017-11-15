@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import withItems from '../../enhancers/withItems'
 import TodoItem from '../TodoItem'
 
-const TodoList = props => {
+export const TodoList = props => {
   return (
     <div className='TodoList'>
       {
@@ -21,9 +22,11 @@ const TodoList = props => {
   )
 }
 
+TodoList.displayName = 'TodoList'
+
 TodoList.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
   toggleCompleted: PropTypes.func.isRequired
 }
 
-export default TodoList
+export default withItems(TodoList)

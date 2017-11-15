@@ -9,10 +9,7 @@ const TodoItem = props => {
     className += ' completed'
   }
   return (
-    <div
-      className={className}
-      onClick={props.onClick}
-    >
+    <div className={className} onClick={props.onClick}>
       {props.item.text}
     </div>
   )
