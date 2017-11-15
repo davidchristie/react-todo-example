@@ -9,19 +9,23 @@ import './App.css'
 const defaultItems = [
   {
     completed: false,
-    text: 'Install Node.js version >= 6'
+    text: 'Install Node.js version 6+ from https://nodejs.org/en/download or "brew install node"'
   },
   {
     completed: false,
-    text: 'Install npm'
+    text: 'Install Yarn with "brew install yarn"'
   },
   {
     completed: false,
-    text: 'Install Yarn'
+    text: 'Use npm to install create-react-app with "npm install create-react-app --global"'
   },
   {
     completed: false,
-    text: 'Use npm to globally install create-react-app'
+    text: 'Create a React app with "create-react-app my-react-app"'
+  },
+  {
+    completed: false,
+    text: 'cd into the newly created directory and start the app in development mode with "yarn start"'
   }
 ]
 
